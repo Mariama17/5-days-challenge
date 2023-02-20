@@ -1,0 +1,88 @@
+body{
+    width:100%;
+    margin:auto;
+  }
+  
+.haut{
+  display:block;
+}   
+  
+.Entete{
+  text-align:center;
+  background-color: midnightblue;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+  
+.search{
+  height: 2.7%;
+  position:absolute;
+  display: block;
+  border: 1px solid midnightblue;
+  margin-left: 3%;
+}
+  
+.research{
+  background-color:#f4a50b;
+  font-size: x-large;
+  margin-left: -27%;
+} 
+  
+.tableau{
+  border-collapse: collapse;
+  min-width: 400px;
+  width: auto;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+  margin: 100px auto;
+  cursor: pointer;
+  /*border: 1px solid midnightblue;*/
+  border: 1px solid #add;
+}
+  
+thead tr {
+  background-color: midnightblue;
+  color: #fff;
+  text-align: center;
+}
+  
+tbody tr, td, th {
+  border: 1px solid #add; 
+}
+  
+tbody tr:nth-child(even){
+  background-color: #f3f3f3;
+}
+  
+button {
+  background: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  border: none;
+  cursor: pointer;   
+  position:relative;
+  left:40%;
+}
+  
+.page-btn {
+  background:#f4a50b; 
+  color:midnightblue;
+  height: 30px;
+  border-radius: 1px; 
+  padding: 8px;
+  text-transform: uppercase; 
+  letter-spacing: uppercase;
+  letter-spacing: 0.1em; 
+}
+  
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: midnightblue;
+  position:absolute;
+  left: 0px; 
+  right: 0px;
+  bottom: 0px
+}
