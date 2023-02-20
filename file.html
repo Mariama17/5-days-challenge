@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>
+    ALL DATA
+  </title>
+  <meta charset="utf-8" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script   
+    type="text/javascript" 
+    language="JavaScript" 
+    src="javascript.js">
+  </script>
+</head>
+<body>
+  <div id="haut">
+    <div class="Entete">
+      <h2 class="top">
+        List of data
+      </h2>
+    </div>
+    <br/>
+    <div class="presentation" >
+      <ul class="menu">
+        <input 
+          type="text" 
+          class="search"
+          name="search" 
+          placeholder="id, name, url, data" 
+          aria-label="Research" 
+          container spacing={{ xs: 2, md: 6, sm: 10 }} 
+          display= "flex"
+          flexDirection= "row" 
+          onPressEnter="getProjectPerPage(1)">
+        <button class="research" onclick="getProjectPerPage(1)">
+            Research
+        </button>
+      </ul>  
+    <table class= "tableau">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>url</th>
+          <th>data</th>
+        </tr>
+      </thead>      
+      <tbody id = "tab_body">
+      </tbody>
+    </table>
+    <div class="pagination-buttons">
+      <button type="button" class="page-btn preview-page">
+        previous
+      </button>
+      <span id="pag_button"></span>
+      <button type="button" class="page-btn next-page">
+        next
+      </button>  
+    </div>
+    <br/>
+  </div>
+</body>          
+<footer>
+      <p> 
+        Politiques relatives aux cookies - Tous droits réservés
+      </p>  
+  </footer>
+</html>
